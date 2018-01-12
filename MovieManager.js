@@ -163,6 +163,7 @@ function MovieManager() {
         this._videoFrame.id = 'GameVideoFrame';
         this._video         = document.createElement('video');
         this._video.id      = 'GameVideo';
+        this._video.setAttribute('playsinline', '');
         this._videoVisible  = false;
         document.body.appendChild(this._videoFrame);
         this._videoFrame.appendChild(this._video);
